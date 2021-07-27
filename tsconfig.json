@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "es5",                                 
+    "module": "commonjs",                           
+    "strict": true,
+    "strictPropertyInitialization": false,                        
+    "outDir": "./dist",                              
+    "esModuleInterop": true,                        
+    "skipLibCheck": true,                           
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true    
+  }
+}

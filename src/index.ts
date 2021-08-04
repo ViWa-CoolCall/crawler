@@ -1,12 +1,7 @@
 import puppeteer from 'puppeteer';
 
-const userDataDir = 'C:\\temp\\pupeteer_user_data';
-
 (async () => {
-  const browser = await puppeteer.launch({
-    executablePath: 'chrome.exe',
-    userDataDir: userDataDir,
-  });
+  const browser = await puppeteer.launch();
 
   const page = await browser.newPage();
 

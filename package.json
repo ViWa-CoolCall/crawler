@@ -1,7 +1,7 @@
 {
   "scripts": {
     "build": "tsc",
-    "dev": "clear && ts-node-dev --inspect --transpile-only --ignore-watch node_modules src/index.ts",
+    "dev": "clear && ts-node-dev --inspect --transpile-only --ignore-watch node_modules src/xerebebeu.js",
     "start": "node index.js"
   },
   "dependencies": {

@@ -1,5 +1,6 @@
-const puppeteer = require('puppeteer');
-const path = require('path');
+import puppeteer from 'puppeteer';
+import path from 'path';
+import { upload } from '../../api/modules/upload';
 
 async function downloadFile() {
   const browser = await puppeteer.launch();
@@ -28,10 +29,14 @@ async function downloadFile() {
     downloadPath: path.resolve('./downloads'),
   });
 
-  await page.click('.download_pdf');
+  await page.click('.download_pdf').then(() => {
+    upload('guarulhos');
+  });
 
   // Qnd chamado o "close()", o download não está sendo feito
   // browser.close();
+
+  ///////////// REVER VÍDEO DA TCESP
 
   // ver vídeo gravado sobre a explicação
   // await page.click('.download_csv');

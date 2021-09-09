@@ -14,4 +14,4 @@ export async function upload(folder = 'guarulhos') {
   return console.log(secure_url);
 }
 
-upload();
+// upload();

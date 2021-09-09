@@ -1,7 +1,10 @@
 import { Router } from 'express';
+import { Receitas } from '../crawler/guarulhos/receitas';
 
 const router = Router();
 
-// router.use('/guarulhos/receitas/download', download.execute);
+const receitas = new Receitas();
+
+router.post('/guarulhos/receitas', receitas.execute);
 
 export { router };
